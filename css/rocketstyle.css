@@ -119,7 +119,7 @@ body.body-state3 .rocket{
 
 body.body-state5 .rocket{
 	background:  url('../img/boom.png') no-repeat 0 0;
-	bottom: -60px;
+	bottom: 0px;
 	display: ;
 	width: 209px;
 	height: 200px;
