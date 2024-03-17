@@ -52,7 +52,7 @@ var changeState= function(state) {
 
 
 	//when timer hits "0" state changes to LIFT OFF
-				if (countdownNumber<= 0){changeState(3);}
+				if (countdownNumber<= 5){changeState(3);}
 
 		}, 500) ;
 		
