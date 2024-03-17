@@ -19,11 +19,11 @@ var changeState= function(state) {
 				
 				//<h1> tag of countdown number 10 changed to a number variable
 				document.getElementById('countdown').innerHTML= countdownNumber;
-				if(state==1){
+		if(state==1){
 					document.getElementById('nervous').className='nervous';
 					document.getElementById('cant-wait').className='cant-wait';
 
-				}
+					}
 
 				//when at state 2 (countdown) a timer has been set to count from 100 each second
 		if(state == 2) {
@@ -46,13 +46,13 @@ var changeState= function(state) {
 						//can't wait
 					 document.getElementById('cant-wait').className='cant-wait show';}
 					  else{
-					 	document.getElementById('cant-wait show').className='cant-wait';
+					 	document.getElementById('cant-wait').className='cant-wait';
 					 }
 
 
 
 	//when timer hits "0" state changes to LIFT OFF
-				if (countdownNumber<= 5){changeState(3);}
+				if (countdownNumber<= 0){changeState(3);}
 
 		}, 500) ;
 		
@@ -94,7 +94,7 @@ var changeState= function(state) {
 
 		};
 	}
-let newtime = 0;
+//let newtime = 0;
 
 /*
 function netTimmerMe (){
