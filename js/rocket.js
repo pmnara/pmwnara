@@ -46,7 +46,7 @@ var changeState= function(state) {
 						//can't wait
 					 document.getElementById('cant-wait').className='cant-wait show';}
 					  else{
-					 	document.getElementById('cant-wait').className='cant-wait';
+					 	document.getElementById('cant-wait show').className='cant-wait';
 					 }
 
 
