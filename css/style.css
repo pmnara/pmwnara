@@ -85,17 +85,6 @@ label.logo{
 	
 	
 }
-
-label.mobilelogo{
-	color:#E1AFD1;
-	font-size: 20px;
-	line-height: 80px;
-	padding-left: 10vh;
-	font-weight:300px;
-	
-	display:none;
-}
-
 nav ul{
 	float: right;
 	margin-right: 20px;
@@ -148,17 +137,11 @@ a:link{
 	}
 }
 
-@media (max-width:858px){
+@media (max-width:411px){
 	.checkbtn{
 		display: block;
 	}
-label.logo{
-	display: none;
-}
-
-label.mobilelogo{
-	display: block;
-}
+	
 	ul{
 		position:fixed;
 		width: 100%;
@@ -185,7 +168,7 @@ a:hover, a.active{
 }
 
 #check:checked ~ ul{
-	left: 0;
+	left:0 ;
 }
 
 }
