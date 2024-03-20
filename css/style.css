@@ -67,6 +67,7 @@ body{
 	font-family: "Merriweather", serif;
 	font-weight: 400;
 	background: #FFE6E6;
+	
 }
 
 nav{
@@ -83,6 +84,16 @@ label.logo{
 	font-weight:300px;
 	
 	
+}
+
+label.mobilelogo{
+	color:#E1AFD1;
+	font-size: 20px;
+	line-height: 80px;
+	padding-left: 10vh;
+	font-weight:300px;
+	
+	display:none;
 }
 
 nav ul{
@@ -141,10 +152,13 @@ a:link{
 	.checkbtn{
 		display: block;
 	}
+label.logo{
+	display: none;
+}
 
-	label.logo{
-		font-size: 22px;
-	}
+label.mobilelogo{
+	display: block;
+}
 	ul{
 		position:fixed;
 		width: 100%;
