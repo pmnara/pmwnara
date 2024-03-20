@@ -74,17 +74,14 @@ nav{
 	height: 80px;
 	width: 100%;
 }
-label{
-	color: #E1AFD1;
-}
 
 label.logo{
 	color:#E1AFD1;
-	font-size: 35px;
+	font-size: 20px;
 	line-height: 80px;
 	padding: 0 100px;
-	font-weight:100px;
-	font-size: italic;
+	font-weight:300px;
+	
 	
 }
 
