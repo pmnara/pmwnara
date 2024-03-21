@@ -87,7 +87,8 @@
     box-sizing: border-box; }
   .slicknav_menu .slicknav_menutxt {
     color:white;
-  padding: 5px;
+  padding: 0px 0px 10px 10px;
+  font-size: 26px;
   }
   .slicknav_menu .slicknav_icon-bar {
     background-color: #fff; }
