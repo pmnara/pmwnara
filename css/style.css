@@ -127,7 +127,7 @@ header {
 #menu a.active, #menu a:hover{
 	color:#E1AFD1;
 	transition: .3s;
-	
+		
 }
 
 a:link{
@@ -229,27 +229,13 @@ a:hover, a.active{
 
 
 
-.enginestate1{
-	display: block;
-}
-.enginestate2{
-	display: none;
-}
 
 /*Tablet View*/
-@media screen and (max-width : 700px){
-	#menu li{
-		position: relative;
-		display: block;
-		padding: 0;
-		line-height: 18px;
-	}
-}
 
 
 
 
-@media screen and (max-width : 625px) {
+@media screen and (max-width : 629px) {
 	/* #menu is the original menu */
 
 	header{
@@ -269,6 +255,24 @@ a:hover, a.active{
 	.js .slicknav_menu {
 		display:block;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.enginestate1{
+	display: block;
+}
+.enginestate2{
+	display: none;
 }
 
 .link2 .enginestate1{display: none}
