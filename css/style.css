@@ -234,7 +234,7 @@ a:hover, a.active{
 
 
 
-
+/*Mobile View*/
 @media screen and (max-width : 629px) {
 	/* #menu is the original menu */
 
@@ -243,7 +243,7 @@ a:hover, a.active{
 	}
 
 	main{
-		display: none;
+		display: block;
 	}
 
 	.slicknav_menu {
