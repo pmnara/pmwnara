@@ -127,6 +127,11 @@ a:link{
 }
 
 
+.slicknav_menu {
+	display:none;
+}
+
+
 @media (max-width: 952px){
 	label.logo{
 		font-size: 30px;
@@ -172,6 +177,22 @@ a:hover, a.active{
 }
 
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+
 
 
 #checkbox{
