@@ -70,10 +70,15 @@ body{
 	
 }
 
+.slicknav_menu {
+	display:none;
+}
+
 nav{
 	background:#7469B6;
 	height: 80px;
 	width: 100%;
+	
 }
 
 label.logo{
@@ -127,9 +132,7 @@ a:link{
 }
 
 
-.slicknav_menu {
-	display:none;
-}
+
 
 
 @media (max-width: 952px){
@@ -142,9 +145,15 @@ a:link{
 	}
 }
 
+
+/*
 @media (max-width:700px){
 	.checkbtn{
-		display: block;
+		display: none;
+	}
+
+	nav{
+		display: none;
 	}
 	
 	ul{
@@ -181,21 +190,8 @@ a:hover, a.active{
 
 
 
-@media screen and (max-width: 600px) {
-	/* #menu is the original menu */
-	.js #menu {
-		display:none;
-	}
-	
-	.js .slicknav_menu {
-		display:block;
-	}
-}
 
-
-
-
-#checkbox{
+#check{
 	display: none;
 }
 
@@ -208,7 +204,27 @@ a:hover, a.active{
 	display: none;
 }
 
+*/
 
+@media screen and (max-width: 700px) {
+	/* #menu is the original menu */
+
+	nav{
+		display: none;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
 
 .link2 .enginestate1{display: none}
 .link2 .enginestate2{display: block}

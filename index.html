@@ -10,27 +10,32 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<!-- end of google font link-->
-<!--second font from google-->	
+	<!-- end of google font link-->
+	<!--second font from google-->	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
 
-<!--DEFAULT CSS STYLE SHEET FOR THE INDEX.HTML-->
+	<!--DEFAULT CSS STYLE SHEET FOR THE INDEX.HTML-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--font aweseome js code line for icons-->
 	<script src="https://kit.fontawesome.com/4cb67ec2ee.js" crossorigin="anonymous"></script>
+	<!--Slicknav navigation integration-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/slicknav/slicknav.min.css">
+    <script src="js/slicknav/jquery.slicknav.min.js"></script>
 </head>
 
 <body >
-	<nav style="display: none;">
+	<nav>
+		<!--
 		<input type="checkbox" id="check">
 		<label for="check" class="checkbtn">
 			</label>
 		<i class="fas fa-bars"></i>
 		<label class="logo">WNPMDEV</label>
-
-		<ul>
+-->
+		<ul id="menu">
 				<li>	<a class="active" href="#">Home</a>	</li>
 				<li>	<a href="#">About Me</a>	</li>
 				<li>	<a href="#">Projects</a>
@@ -44,43 +49,27 @@
 	</nav>
 
 
+
 	
-<!--Markup for Slicknavs JS navigation bar-->
-	<nav id="slicknavs">
+	
+
+			<div class="link1">
+			<h1>Hello World, Welcome</h1>
+			<a href="#" onclick="carOn(); changeLink(2);" class="enginestate1">Engine Start</a>
+			<a href="#" onclick="carOff(); changeLink(1);" class="enginestate2">Engine Off</a> 
+			</div>
+
+
+
+
+
+
 		
-		<ul id="menu2">
-			<li>	<a class="active" href="#">Home</a>	</li>
-			<li>	<a href="#">About Me</a>	</li>
-			<li>	<a href="#">Projects</a>
-				<ul>
-					<li>	<a href="https://pmwnara.github.io/pmwnara/rocket">Rocket </a> </li> </li>
-					<li>	<a href="https://pmwnara.github.io/pmwnara/countdowntimer">Countdown Timer</a>	</li>
-				</ul>
-			<li>	<a href="#">Contact</a>	</li>
-	</ul>
-
-	</nav>
-
-
-	<section></section>
-	<div style="padding-left: 10px; padding-right: 10px; padding-top: 20px;">
-
-	<div class="link1">
-	<h1>Hello Welcome</h1>
-	<a href="#" onclick="carOn(); changeLink(2);" class="enginestate1">Engine Start</a>
-	<a href="#" onclick="carOff(); changeLink(1);" class="enginestate2">Engine Off</a> 
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
+		<script>
+				$(function(){
+				$('#menu').slicknav();
+				});
+		</script>
+</body>
 </html>
 
