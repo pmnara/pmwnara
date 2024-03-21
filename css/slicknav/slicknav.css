@@ -15,11 +15,14 @@
     margin-top: 0.188em; }
 
 .slicknav_menu {
-  *zoom: 1; }
+  *zoom: 1; 
+
+}
   .slicknav_menu .slicknav_menutxt {
     display: block;
     line-height: 1.188em;
     float: left; }
+    
   .slicknav_menu .slicknav_icon {
     float: left;
     width: 1.125em;
@@ -83,9 +86,9 @@
   .slicknav_menu * {
     box-sizing: border-box; }
   .slicknav_menu .slicknav_menutxt {
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 1px 3px #000; }
+    color:white;
+  padding: 5px;
+  }
   .slicknav_menu .slicknav_icon-bar {
     background-color: #fff; }
 
@@ -96,7 +99,9 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #AD88C6; }
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  }
 
 .slicknav_nav {
   color: #fff;

@@ -242,7 +242,9 @@ a:hover, a.active{
 		display: none;
 	}
 
-	
+	main{
+		display: none;
+	}
 
 	.slicknav_menu {
 		display:block;

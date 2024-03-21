@@ -7,7 +7,7 @@
     var
     // default settings object.
         defaults = {
-            label: '',
+            label: 'Pramod Learn2Code',
             duplicate: true,
             duration: 200,
             easingOpen: 'swing',
