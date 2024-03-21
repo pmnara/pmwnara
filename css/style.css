@@ -69,42 +69,64 @@ body{
 	background: #FFE6E6;
 	
 }
+main{	
+	padding: 8px;
+}
 
 .slicknav_menu {
 	display:none;
+	
 }
 
-header nav{
+header {
 	background:#7469B6;
-	height: 80px;
+	height: 70px;
 	width: 100%;
+	z-index: 1000;
 	
 }
 
-
-header nav ul{
+#logo{
+	position:absolute;
+	display: block;
+	text-decoration: none;
+	color: white;
+	line-height: 69.5px;
+	padding-left: 15px;
 	
+}
+
+#menu {
 	float: right;
 	margin-right: 20px;
+	font-family: 'Courier New', Courier, monospace;
 }
 
-header nav ul li{
+ #menu li{
 	position: relative;
 	display: inline-block;
-	line-height:80px;
-	margin: 0 5px;
+	line-height:69.5px;
+	margin: 0 ;
 }
-
-header nav ul li a{
+/*Header menu link styling*/
+#menu li a{
+	text-decoration: none;
 	color: #FFE6E6;
-	font-size: 17px;
-	padding: 7px 13px;
+	font-size: 18px;
+	padding: 8px 13px;
+	border-left: 1px solid #FFE6E6 ;
+	
 }
 
-a.active,a:hover{
-	padding-left: 5px;
-	padding-right: 5px;
+/*Submenu Link Styling */
+#menu li ul li a{
+	border-left: none;
+}
+
+/*Header menu hover actions */
+#menu a.active, #menu a:hover{
 	color:#E1AFD1;
+	transition: .3s;
 	
 }
 
@@ -214,13 +236,27 @@ a:hover, a.active{
 	display: none;
 }
 
+/*Tablet View*/
+@media screen and (max-width : 700px){
+	#menu li{
+		position: relative;
+		display: block;
+		padding: 0;
+		line-height: 18px;
+	}
+}
 
-@media screen and (max-width: 728px) {
+
+
+
+@media screen and (max-width : 625px) {
 	/* #menu is the original menu */
 
-	header nav{
+	header{
 		display: none;
 	}
+
+	
 
 	.slicknav_menu {
 		display:block;
