@@ -1,10 +1,20 @@
-body{background: black;
-font-family: 'helvetica'}
+body{
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
 
 
 /*Left Div*/
 .left{
-	background: #6affcc;
+	background:#AD88C6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
 	width: 50%;
 	height: 100vh;
@@ -13,9 +23,12 @@ font-family: 'helvetica'}
 }
 
 /*Right Div*/
-.right{
-
-	background: #cae1f6;
+.right {
+	background: #E1AFD1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
 	width: 50%;
 	height: 100vh;
@@ -23,6 +36,15 @@ font-family: 'helvetica'}
 
 }
 
+.balance  {
+	
+	padding-left: 5px;
+	padding-right: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 .nervous{
 	position: absolute;
@@ -33,12 +55,12 @@ font-family: 'helvetica'}
 	left:50%;
 	margin-left: -188px;
 	display: none;
-	
 }
 
 
 .nervous.show{
 	display: block;
+
 }
 
 
@@ -52,7 +74,6 @@ font-family: 'helvetica'}
     left: 50%;
     display: none;
     
-	
 }
 
 .cant-wait.show{
@@ -72,11 +93,11 @@ a:hover{
 
 a.button{
 	display: inline-block;
-	background-color: white;
+	background-color: #FFE6E6;
 	color: black;
-	padding: 20px 40px;
+	padding: 15px 20px;
 	text-decoration: none;
-	border-radius: 15px;
+	border-radius: 8px;
 	text-transform: uppercase;
 
 
@@ -84,7 +105,7 @@ a.button{
 
 /*Rocket Div on right*/
 .rocket{
-	position:absolute;
+	position: absolute;
 	left:50%;
 	margin-left: ;
 	bottom: 20px;
