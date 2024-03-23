@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
 
 
 
@@ -55,20 +68,26 @@
 
 
 *{
-	padding: 0;
+	
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
-	box-sizing: border-box;
+	
+}
+
+button{
+	all:unset;
 }
 
 /* Global CSS*/
 body{
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	background: #FFE6E6;
+	font-family: "Inter", serif;
+	background: #FFE6E6;	
 	
 }
+
 main{	
 	padding: 8px;
 }
@@ -237,6 +256,7 @@ a:hover, a.active{
 /*Mobile View*/
 @media screen and (max-width : 629px) {
 	/* #menu is the original menu */
+
 
 	header{
 		display: none;
