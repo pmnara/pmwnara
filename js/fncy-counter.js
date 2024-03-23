@@ -1,9 +1,9 @@
 console.log('js is working');
 
 const increaseButton = document.querySelector(".counter__button--increase");
+const decreaseButton = document.querySelector('.counter__button--decrease');
 const counterValue = document.querySelector('.counter__value');
 const resetButton = document.querySelector('.counter__reset-button');
-const decreaseButton = document.querySelector('.counter__button--decrease');
 
 increaseButton.addEventListener('click',function(){
     const currentValue = counterValue.textContent;
@@ -17,12 +17,14 @@ resetButton.addEventListener('click', function(){
 });
 
 decreaseButton.addEventListener('click', function(){
+    if(counterValue.textContent==0){
+        document.querySelector('.counter__button--decrease').disabled;
+    }else{
     const currentValue = counterValue.textContent;
     const currentValueToNumber = +currentValue;
-    const minusValue = currentValue-1;
-    counterValue.textContent= minusValue;
-    if(minusValue==0){
-        
+    const newValue = currentValue-1;
+    counterValue.textContent= newValue;
     }
+
 });
 
