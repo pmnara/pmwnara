@@ -106,13 +106,14 @@ body{
 }
 
 @media (max-width: 680px) or (max-height:730px){
-       body{
+/* 
+    body{
         display: flex;
         justify-content: center;
         height:100vh;
         width:100vw;
     }
-
+*/
  
 .counter {
     width: all 100vw;
