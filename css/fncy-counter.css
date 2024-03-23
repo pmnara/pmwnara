@@ -31,6 +31,7 @@ body{
     font-weight: 500;
     font-size: 32px;
     margin-top: 60px;
+  
 
 }
 
@@ -109,13 +110,13 @@ body{
 
  
 .counter {
-    width: 100vw;
-    height:100vh;
+    width: 580px;
+    height:630px;
     border-radius: 0;
 }   
 
 .counter__title{
-    margin-top: 100px;
+    
 }
 
 .counter__buttons{

@@ -17,6 +17,7 @@ resetButton.addEventListener('click', function(){
 });
 
 decreaseButton.addEventListener('click', function(){
+   
     if(counterValue.textContent==0){
         document.querySelector('.counter__button--decrease').disabled;
     }else{
