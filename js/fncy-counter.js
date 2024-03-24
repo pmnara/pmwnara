@@ -19,13 +19,11 @@ resetButton.addEventListener('click', function(){
 decreaseButton.addEventListener('click', function(){
     const currentValue = counterValue.textContent;
     const currentValueToNumber = +currentValue;
-    let newMinusValue = currentValueToNumber-1;
-   // counterValue.textContent= newValue;
-    if(newMinusValue <0){
-        newMinusValue=0;
-        //document.querySelector('.counter__button--decrease').disabled;
+    let newValue = currentValueToNumber-1;
+    if(newValue <0){
+        newValue=0;
     }
-    counterValue.textContent=newMinusValue;
+    counterValue.textContent=newValue;
 
 });
 
