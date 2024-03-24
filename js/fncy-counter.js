@@ -17,15 +17,15 @@ resetButton.addEventListener('click', function(){
 });
 
 decreaseButton.addEventListener('click', function(){
-   
-    if(counterValue.textContent==0){
-        document.querySelector('.counter__button--decrease').disabled;
-    }else{
     const currentValue = counterValue.textContent;
     const currentValueToNumber = +currentValue;
-    const newValue = currentValue-1;
-    counterValue.textContent= newValue;
+    let newMinusValue = currentValueToNumber-1;
+   // counterValue.textContent= newValue;
+    if(newMinusValue <0){
+        newMinusValue=0;
+        //document.querySelector('.counter__button--decrease').disabled;
     }
+    counterValue.textContent=newMinusValue;
 
 });
 
