@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Count</title>
+</head>
+<body>
+<textarea id="textArea" rows="5" cols="50"></textarea>
+<p>Word Count: <span id="wordCount">0</span></p>
+
+<script>
+const textArea = document.getElementById('textArea');
+const wordCountDisplay = document.getElementById('wordCount');
+
+// Function to count words
+function countWords(text) {
+    // console.log(text);
+    // Remove leading and trailing whitespace and split the text into an array of words
+    const words = text.split(/\s+/);
+    console.log(words)
+    // Filter out empty strings
+    const filteredWords = words.filter(word => word !== ' ');
+    // Return the length of the filtered words array
+    console.log(filteredWords)
+    return filteredWords.length;
+}
+
+// Function to update word count
+function updateWordCount() {
+    const text = textArea.value;
+    const wordCount = countWords(text);
+    wordCountDisplay.textContent = wordCount;
+}
+
+// Listen for input event on the textarea to update word count
+textArea.addEventListener('input', updateWordCount);
+
+// Initial word count
+//updateWordCount();
+</script>
+</body>
+</html>
