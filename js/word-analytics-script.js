@@ -24,13 +24,6 @@ if(textArea.value.includes('<script>')){
     textArea.value = textArea.value.replace('<script>', '');
 }
 
-// let countWords = textArea.value.split(' ').length;
-// console.log(textArea.value.length)
-// if(textArea.value.length===0) countWords =0;
-
-// wordCount.textContent= countWords;
-
-// counting numnber of words
 
 const countWords = textArea.value.trim().split(/\s+/)
 console.log(countWords)
