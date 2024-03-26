@@ -1,5 +1,5 @@
-console.log('js active');
-const wordCount = document.querySelector('.stat__number');
+
+const wordCount = document.querySelector('.stat__number--words');
 
 const textArea = document.querySelector('.textarea');
 
@@ -12,7 +12,6 @@ const faceBook= document.querySelector('.stat__number--facebook')
 
 textArea.addEventListener('input', inputHandler);
 
-// textArea.addEventListener('input', twitterBalance);
 
 
 
@@ -25,14 +24,22 @@ if(textArea.value.includes('<script>')){
     textArea.value = textArea.value.replace('<script>', '');
 }
 
+// let countWords = textArea.value.split(' ').length;
+// console.log(textArea.value.length)
+// if(textArea.value.length===0) countWords =0;
+
+// wordCount.textContent= countWords;
 
 // counting numnber of words
 
-    let numberOfWords = textArea.value.split(' ').length;
-    console.log(textArea.value.length)
-    if(textArea.value.length===0) numberOfWords =0;
-   
-    wordCount.textContent= numberOfWords;
+const countWords = textArea.value.trim().split(/\s+/)
+console.log(countWords)
+const filterWords = countWords.filter(function (word) {return word !== '';})
+wordCount.textContent=filterWords.length;
+
+
+
+
 
 //counting total number of character inputs
 
@@ -58,16 +65,3 @@ if(textArea.value.includes('<script>')){
 };
 
 
-
-// function twitterBalance (){
-//    const twitterLimit = parseInt(twitter.textContent);
-//    console.log(typeof twitterLimit );
-//    let typedLetter = parseInt (totalCharaterInputs);
-
-//    console.lgo(typedLetter);
-
-//    let remaining = twitterLimit-parseInt(totalCharaterInputs);
-
-   
-
-// }
