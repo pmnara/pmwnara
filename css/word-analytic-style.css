@@ -120,6 +120,12 @@ body{
     opacity: 0.4;
 }
 
+
+
+.limit-exceeded{
+    color: red;
+}
+
 @media (max-width: 1050px){
 
 .container{
